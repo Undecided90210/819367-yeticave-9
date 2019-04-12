@@ -27,6 +27,7 @@ $user_name = 'Дмитрий'; // укажите здесь ваше имя
         <a class="main-header__add-lot button" href="pages/add-lot.html">Добавить лот</a>
 
         <nav class="user-menu">
+        <!-- PHP код для показа меню и данных пользователя -->
             <?php if ($is_auth == 1) : ?>
                 <div class="user-menu__logged">
                     <p><?=$user_name; ?></p>
@@ -43,8 +44,7 @@ $user_name = 'Дмитрий'; // укажите здесь ваше имя
                     </li>
                 </ul>
             <?php endif; ?>
-        <!-- здесь должен быть PHP код для показа меню и данных пользователя -->
-
+        <!-- / PHP код для показа меню и данных пользователя -->
         </nav>
     </div>
 </header>
