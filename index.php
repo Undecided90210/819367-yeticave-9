@@ -37,12 +37,10 @@ $ad = [
         ],
     ];
 function price_formatting($price){
-    $price_formatted = ceil($price);
-    if ($price_formatted >= 1000) {
-        $price_formatted = number_format($price_formatted, 0, '', ' ');
-    }
-    $price_formatted .= ' <b class="rub">р</b>';
-    return $price_formatted;
+    $price = ceil($price);
+    $price = number_format($price, 0, '', ' ');
+    $price .= ' <b class="rub">р</b>';
+    return $price;
 }
 ?>
 <!DOCTYPE html>
