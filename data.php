@@ -1,5 +1,4 @@
 <?php
-$title = 'YetiCave. Интернет-аукцион сноубордического и горнолыжного снаряжения';
 $is_auth = rand(0, 1);
 $user_name = 'Дмитрий'; 
 $categories = ['Доски и лыжи', 'Крепления', 'Ботинки', 'Одежда', 'Инструменты', 'Разное' ];
@@ -34,12 +33,6 @@ $ad = [
             'category' => $categories[5], 
             'price' => 5400, 
             'image' => 'img/lot-6.jpg'
-        ],
-    ];
-function price_formatting($price){
-    $price = ceil($price);
-    $price = number_format($price, 0, '', ' ');
-    $price .= ' <b class="rub">р</b>';
-    return $price;
-}
+        ]
+        ];
 ?>

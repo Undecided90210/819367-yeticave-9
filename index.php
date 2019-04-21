@@ -1,13 +1,19 @@
 <?php
+// заголовок страницы
+$title = 'YetiCave. Интернет-аукцион сноубордического и горнолыжного снаряжения';
+
 // служебные функции
 require_once('helpers.php');
 
-// переменные, массивы и функции
+// кастомные функции
+require_once('functions.php');
+
+// переменные, и массивы
 require_once('data.php');
 
 // HTML код главной страницы
 $page_content = include_template('index.php', 
-[htmlspecialchars('categories') => $categories, htmlspecialchars('ad') => $ad]);
+['categories' => $categories, 'ad' => $ad]);
 
 // окончательный HTML код
 $layout_content = include_template('layout.php', 
