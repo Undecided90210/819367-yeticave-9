@@ -35,4 +35,3 @@ $ad = [
             'image' => 'img/lot-6.jpg'
         ]
         ];
-?>
