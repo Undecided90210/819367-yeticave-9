@@ -5,4 +5,3 @@ function price_formatting($price){
     $price .= ' <b class="rub">р</b>';
     return $price;
 }
-?>
