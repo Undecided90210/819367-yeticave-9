@@ -15,12 +15,7 @@ require_once('data.php');
 $page_content = include_template('index.php', 
 [
     'categories' => $categories, 
-<<<<<<< HEAD
     'ad' => $ad
-=======
-    'ad' => $ad,
-    'warning_time' => $warning_time
->>>>>>> 7d11c9218b468da43502eb3dd0b60ec45760bf63
 ]);
 
 // окончательный HTML код
