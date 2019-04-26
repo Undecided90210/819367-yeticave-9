@@ -15,8 +15,7 @@ require_once('data.php');
 $page_content = include_template('index.php', 
 [
     'categories' => $categories, 
-    'ad' => $ad,
-    'lot_lifetime' => lot_lifetime(),
+    'ad' => $ad
 ]);
 
 // окончательный HTML код
