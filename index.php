@@ -16,7 +16,7 @@ $page_content = include_template('index.php',
 [
     'categories' => $categories, 
     'ad' => $ad,
-    'lot_lifetime' => lot_lifetime(),
+    'warning_time' => $warning_time
 ]);
 
 // окончательный HTML код

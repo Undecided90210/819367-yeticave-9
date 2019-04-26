@@ -6,8 +6,8 @@ function price_formatting($price){
     $price .= ' <b class="rub">р</b>';
     return $price;
 }
-function lot_lifetime(){
-    $death_timestamp = strtotime('tomorrow midnight');
+function lot_lifetime($death_time){
+    $death_timestamp = strtotime($death_time);
     $current_timestamp = time();
     $lifetime = $death_timestamp - $current_timestamp;
     $lifetime_formatted = date('H:i', $lifetime);
