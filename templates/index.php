@@ -30,7 +30,7 @@
                             <span class="lot__amount">Стартовая цена</span>
                             <span class="lot__cost"><?=price_formatting($value['price']); ?></span>
                         </div>
-                        <div class="lot__timer timer <?=(strtotime($value['lifetime']) <= strtotime('+1 hour')) ? 'timer--finishing' : '' ?>">
+                        <div class="lot__timer timer<?php if (is_warning_time($value['lifetime'])): ?> timer--finishing<?php endif; ?>">
                             <?=lot_lifetime($value['lifetime']); ?>
                         </div>
                     </div>
